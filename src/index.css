@@ -1,0 +1,465 @@
+/* For Home Page */
+#slider {
+  background-image: url(./Images/banner_bg_1.png);
+  background-repeat: no-repeat;
+  min-height: 130vh;
+  background-size: cover;
+  color: white;
+}
+
+#sliderimg {
+  width: 40%;
+  float: right;
+  height: 90vh;
+  background-image: url(./Images/banner_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slidertext {
+  float: left;
+  width: 55%;
+  margin: 25vh auto 0px 10px;
+  padding-left: 10px;
+}
+
+.btn {
+  border: 1.5px solid #f94242;
+
+  background-color: white;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.btn a {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: white;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: #f94242;
+  text-decoration: none;
+  border: 1.5px solid white;
+}
+
+/* For About */
+#about {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#aboutHeading {
+  color: red;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#aboutImg {
+  width: 430px;
+  height: 400px;
+  background-image: url(./Images/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#aboutText {
+  width: 55%;
+}
+
+#aboutText p {
+  font-weight: 500;
+}
+
+#aboutText h1 {
+  font-weight: 700;
+}
+
+/* For Services */
+#services {
+  text-align: center;
+  width: 100%;
+  float: left;
+  color: white;
+  background-image: url(./Images/banner_bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#services .card {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 2%;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 1px solid transparent !important;
+}
+
+#services h1 {
+  font-weight: 700;
+}
+
+#services p {
+  padding: 10px;
+}
+
+.card-title {
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.card img {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+/* For Price */
+#price {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#price h1 {
+  line-height: inherit !important;
+  font-weight: 800;
+}
+
+#price .card {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 2%;
+  margin-top: 30px;
+  border: 1px solid transparent !important;
+}
+
+#price .card h1 {
+  font-weight: 700;
+}
+
+.card-body {
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.card-text {
+  font-weight: 600;
+}
+
+/* For Team */
+#team {
+  text-align: center;
+  background-image: url(./Images/banner_bg_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#team h1 {
+  margin-top: 100px;
+  font-weight: 800;
+}
+
+.teamtext img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.teamtext {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+}
+
+/* For Contact */
+#contact {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contactUs {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+#contact h1 {
+  font-weight: 800;
+}
+
+#contact button {
+  background-color: #fb5353;
+  color: white;
+}
+
+#contact button:hover {
+  background-color: #fb5353;
+  color: aliceblue !important;
+}
+
+/* For Footer */
+.myfooter {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(53, 9, 211);
+  float: left;
+}
+
+.myfooter .card {
+  display: inline-block;
+  text-align: center;
+  border: 0px none white !important;
+  background-color: rgb(46, 8, 214);
+  color: white;
+  width: 30%;
+  margin-left: 3%;
+}
+
+#rights {
+  text-align: center;
+  color: white;
+}
+
+.myfooter img {
+  border-radius: 50%;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Extra large devices (large laptops and desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+  #logo {
+    float: left;
+    width: 15%;
+    text-align: center;
+  }
+
+  #list ul {
+    float: right;
+    margin-left: 5%;
+  }
+
+  #list ul li {
+    display: inline-block;
+    margin: 5px 80px 0 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* Large devices (laptops/desktops, from 993px to 1200px) */
+@media only screen and (max-width: 1200px) {
+  #logo {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+
+  #list ul {
+    float: right;
+  }
+
+  #list ul li {
+    display: inline-block;
+    margin: 10px 60px 0 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* Medium devices (landscape tablets, from 768px to 992px) */
+@media only screen and (max-width: 992px) {
+  #logo {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+
+  #list ul {
+    float: right;
+    margin-left: 50px;
+  }
+
+  #list ul li {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #aboutImg {
+    display: none;
+  }
+
+  #aboutText {
+    float: none;
+    width: 100%;
+  }
+
+  #services .card {
+    width: 30%;
+  }
+
+  .contactUs {
+    width: 75%;
+  }
+
+  #price .card {
+    width: 30%;
+  }
+
+  .myfooter .card {
+    width: 33%;
+    margin-left: 0%;
+  }
+
+  .myfooter img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, from 768px to 576px) */
+@media only screen and (max-width: 767px) {
+  header {
+    height: auto;
+  }
+
+  #logo {
+    margin-right: 100px;
+  }
+
+  #list ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #list ul li {
+    display: block;
+    margin: 0px;
+    text-align: left;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #myicon1 {
+    height: 5px;
+    background-color: white;
+    margin-top: 20px;
+  }
+
+  #myicon2 {
+    height: 5px;
+    background-color: white;
+  }
+
+  #myicon3 {
+    height: 5px;
+    background-color: white;
+    margin-top: -10px;
+  }
+
+  .navbar-toggler:hover {
+    background-color: red;
+  }
+
+  #services .card {
+    width: 70%;
+  }
+
+  .contactUs {
+    width: 100%;
+  }
+
+  #price .card {
+    width: 70%;
+  }
+
+  .myfooter .card {
+    width: 70%;
+    margin-left: 0%;
+  }
+
+  .teamtext {
+    width: 70%;
+  }
+
+  .flint {
+    font-weight: 700;
+    color: #f94242;
+    letter-spacing: 0.3px;
+  }
+
+  .teamtext h4 {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+}
+
+/* Extra small devices (phones, from 575px to ...) */
+@media only screen and (max-width: 575px) {
+  #slider {
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    padding-top: 0 !important;
+    font-size: 23px !important;
+  }
+
+  .navbar-brand h1 {
+    font-size: 35px !important;
+  }
+
+  #sliderimg {
+    display: none;
+  }
+
+  #slidertext p {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  #slidertext {
+    width: 100%;
+    text-align: center;
+    margin: 90px auto 0px auto;
+  }
+}

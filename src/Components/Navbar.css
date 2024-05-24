@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding-top: 80px;
+}
+
+nav {
+  display: flex;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #6606c0;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+/* Existing CSS */
+.logoo {
+  position: relative;
+  right: 50px;
+  cursor: pointer;
+}
+
+.btn-login {
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: green;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-signup {
+  padding: 6px;
+  width: 82px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 40px;
+  display: none;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+nav ul li {
+  margin: 0 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100000;
+}
+
+nav ul li a {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+  color: white !important;
+}
+
+nav ul li .active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  top: 40px;
+  background-color: #f94242;
+  transition: width 0.5s ease;
+}
+
+nav ul li .active:hover::before {
+  width: 0%;
+}
+
+nav .menu-btn i {
+  color: #ffffff !important;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.home {
+  text-decoration: underline;
+}
+
+.btn-main {
+  display: flex;
+  gap: 30px;
+}
+
+.show {
+  display: none;
+}
+
+.navbar-brand h1 {
+  color: white;
+}
+
+.navbar-brand {
+  padding-bottom: 0 !important;
+  padding-top: 10px;
+}
+
+/* Modal CSS */
+
+body.active-modal {
+  overflow-y: hidden;
+  margin-right: 16px;
+}
+
+.in {
+  position: relative;
+  display: block !important;
+  cursor: pointer;
+  top: 13px;
+  right: 17px;
+}
+
+.swal2-confirm {
+  background-color: #002b64 !important;
+}
+
+.swal2-container {
+  z-index: 10000000000;
+}
+
+.modal {
+  margin: 20px !important;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10000;
+  transition: 1s;
+}
+
+.overlay {
+  background-color: rgb(49, 49, 49, 0.8);
+}
+
+.modal {
+  display: inline;
+}
+
+.modal-content {
+  position: absolute;
+  height: 65vh;
+  transition: 1s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 20px;
+  max-width: 600px;
+  min-width: 300px;
+  z-index: 10000000;
+}
+
+.modal-content h2 {
+  text-align: center;
+  color: #000000;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.modal-content p {
+  text-align: center;
+  color: #f94242;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.modal-content span p {
+  bottom: 13px;
+  position: relative;
+  color: #999999;
+  font-size: 8px;
+  padding: 3px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-content span p label {
+  cursor: pointer;
+}
+
+.modal-content span {
+  position: relative;
+  top: 40px;
+}
+
+.h1-1 {
+  font-size: 40px;
+  margin-top: 0 !important;
+}
+
+.p-l-1 {
+  color: #f94242 !important;
+  font-weight: 900 !important;
+  font-size: 12px !important;
+  bottom: 10px;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.inp {
+  left: 5%;
+  width: 90%;
+  font-size: 12px;
+  border-radius: 5px;
+  top: 25px;
+  padding: 10px;
+  height: 41px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  border-top-right-radius: 20px;
+  top: 11px;
+  right: 0px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  transform: translate(0%, -50%);
+  background-color: #f94242;
+  margin-top: 10px;
+  width: 53px;
+  height: 44px;
+  text-decoration: none;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+}
+
+.btn-pr {
+  width: 96px;
+  height: 32px;
+  left: 40%;
+  top: 20px;
+  position: relative;
+  border: 2px solid #f94242;
+  background-color: #f94242;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-pr:hover {
+  background-color: #fff;
+  border: 2px solid black;
+  color: black;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+@media (max-width: 1150px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+
+  .navbar-brand {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  nav ul li a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1150px) {
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: inline;
+  }
+
+  nav .menu-btn i {
+    top: 27px;
+    position: absolute;
+    right: 6%;
+    display: block;
+  }
+
+  .logoo {
+    position: relative;
+    right: 0;
+  }
+
+  #click:checked~.menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav {
+    padding: 17px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 69px;
+    left: -100%;
+    background: #f94242;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+
+  #click:checked~ul {
+    left: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 22px 0;
+  }
+
+  nav ul li {
+    margin-left: -100%;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked~ul li {
+    margin-left: 0px;
+  }
+
+  nav ul li.active,
+  nav ul li:hover {
+    background: none;
+    color: rgb(0, 0, 0);
+  }
+
+  nav .logo {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 744px) {
+  .modal-content span p {
+    font-size: 7px;
+  }
+
+  .btn-pr {
+    top: 42px;
+    left: 32%;
+  }
+
+  .inp {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .modal-content span p {
+    padding-left: 5px;
+  }
+
+  .modal {
+    margin: auto;
+    width: 90%;
+  }
+}
